@@ -6,6 +6,7 @@
     <title>DevPulse Cloud Infrastructure</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header class="site-header">
         <a href="#" class="brand-logo" aria-label="DevPulse Home Page">
@@ -15,11 +16,10 @@
             <a href="#features" class="nav-link">Features</a>
             <a href="#tier-comparison" class="nav-link">Tier Comparison</a>
             <a href="#workload-estimator" class="nav-link">Workload Estimator</a>
-           
-            <!-- CTA Button -->
             <a href="#register" class="btn btn-sm btn-primary">Deploy Free Cluster</a>
         </nav>
     </header>
+    
     <main>
         <section id="hero" class="hero-section">
             <span class="value-metrics">Cloud Monitoring | Scalable Infrastructure | Automated Response</span>
@@ -30,6 +30,7 @@
                 <a href="#workload-estimator" class="btn btn-secondary">Estimate Workload</a>
             </div>
         </section>
+        
         <section id="features" class="features-section">
             <header class="section-header">
                 <h2 class="section-title">Platform Features</h2>
@@ -50,6 +51,84 @@
                 </article>
             </div>
         </section>
+        
+        <section id="tier-comparison" class="tier-comparison-section">
+            <header class="section-header">
+                <h2 class="section-title">Choose Your Infrastructure Tier</h2>
+                <p class="section-subtitle">Select the tier that best fits your workload and infrastructure needs.</p>
+            </header>
+            <div class="tier-grid">
+                <article class="tier-card">
+                    <h3 class="tier-title">Developer</h3>
+                    <p class="tier-desc">A starting tier for developers working with smaller cloud workloads.</p>
+                    <a href="#register" class="btn btn-secondary">Choose Developer</a>
+                </article>
+                <article class="tier-card featured">
+                    <span class="popular-tag">Most Popular</span>
+                    <h3 class="tier-title">Pro Cluster</h3>
+                    <p class="tier-desc">Designed for growing workloads that need additional capacity and flexibility.</p>
+                    <a href="#register" class="btn btn-primary">Choose Pro Cluster
+                </article>
+                <article class="tier-card">
+                    <h3 class="tier-title">Enterprise Dedicated</h3>
+                    <p class="tier-desc">Dedicated infrastructure for organizations managing larger cloud workloads.</p>
+                    <a href="#register" class="btn btn-secondary">Choose Enterprise</a>
+                </article>
+            </div>
+        </section>
+        
+        <section id="workload-estimator" class="workload-estimator-section">
+            <div class="form-wrapper">
+                <header class="section-header">
+                    <h2 class="section-title">Estimate Your Workload</h2>
+                    <p class="section-subtitle">Enter your workload requirements to verify tier compatibility.</p>
+                </header>
+                <form action="#" method="post" class="estimator-form">
+                    <div class="form-group">
+                        <label for="node-count" class="form-label">Node Count</label>
+                        <input type="number" name="node-count" id="node-count" class="form-control" min="1" max="1000" step="1" placeholder="e.g. 10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="log-throughput" class="form-label">Log Throughput</label>
+                        <input type="number" name="log-throughput" id="log-throughput" class="form-control" min="1" max="1000" step="1" placeholder="e.g. 100" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Verify Tier Compatibility</button>
+                </form>
+            </div>
+        </section>
+        
+        <section id="register" class="lead-capture-section">
+            <div class="form-wrapper">
+                <header class="section-header">
+                    <h2 class="section-title">Deploy Your Free Cluster</h2>
+                    <p class="section-subtitle">Enter your information and select an infrastructure tier to get started.</p>
+                </header>
+                <form action="#" method="post" class="lead-capture-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Work Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="name@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tier" class="form-label">Infrastructure Tier</label>
+                        <select name="tier" id="tier" class="form-control" required>
+                            <option value="">Select a tier</option>
+                            <option value="developer">Developer</option>
+                            <option value="pro-cluster">Pro Cluster</option>
+                            <option value="enterprise-dedicated">Enterprise Dedicated</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Request API Sandbox Access</button>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 DevPulse. All rights reserved.</p>
+    </footer>
 </body>
 </html>
