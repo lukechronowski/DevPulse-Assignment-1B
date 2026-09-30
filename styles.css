@@ -202,3 +202,64 @@ html {
     color: var(--text-muted);
     font-size: 0.95rem;
 }
+
+.tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.tier-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: transform var(--transition-speed), border-color var(--transition-speed), background-color var(--transition-speed);
+}
+
+.tier-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--text-muted);
+    background-color: var(--bg-card-hover);
+}
+
+.tier-card.featured {
+    border: 2px solid var(--accent);
+    background-color: rgba(255, 90, 54, 0.05);
+    transform: scale(1.03);
+}
+
+.tier-card.featured:hover {
+    transform: scale(1.03) translateY(-4px);
+}
+
+.popular-tag {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--accent);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+}
+
+.tier-title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.tier-desc {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.tier-card .btn {
+    margin-top: auto;
+}
