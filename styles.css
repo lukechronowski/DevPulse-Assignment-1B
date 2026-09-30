@@ -1,0 +1,26 @@
+:root {
+    --bg-light: #fff;
+    --bg-card: #fff;
+    --primary: #111;
+    --primary-hover: #333;
+    --text-main: #111;
+    --text-muted: #666;
+    --border-color: #ddd;
+    --accent: #ff5a36;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    --transition-speed: 0.2s;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    line-height: 1.6;
+}
